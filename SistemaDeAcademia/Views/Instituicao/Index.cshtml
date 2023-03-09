@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Instituições";
+}
+<div class="text-center">
+    <h1 class="display-4">Instituições</h1>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a asp-controller="Instituicao" asp-action="Criar" class="btn btn-primary" role="button">Adicionar academia</a>
+    </div>
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>mdo</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a asp-controller="Instituicao" asp-action="Editar" class="btn btn-primary" role="button">Editar</a>
+                        <a asp-controller="Instituicao" asp-action="ConfirmacaoApagar" class="btn btn-danger" role="button">Deletar</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
